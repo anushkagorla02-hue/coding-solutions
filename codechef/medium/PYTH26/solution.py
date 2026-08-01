@@ -1,5 +1,4 @@
 # Update your code below this line
-radius=8.9
-pi=3.14
-area=pi*(radius**2)
-print(area)
+a="Learning"
+b='is fun!'
+print(f"{a} {b}")
