@@ -94,7 +94,7 @@ Both `&&` and `||` should have a _space_ " " on both sides.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-20T17:37:47.007Z  
+**Submitted:** 2026-08-02T18:26:19.395Z  
 
 ```py
 # Enter your code here. Read input from STDIN. Print output to STDOUT
