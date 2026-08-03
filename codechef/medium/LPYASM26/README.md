@@ -4,27 +4,31 @@
 
 ## Problem
 
-_Description not available._
+You are designing a temperature monitoring system.
+
+Given temperature = 25
+
+Check if the temperature is in the safe range. If it is safe, print True else print False
+
+- Above or equal to 20
+- Below or equal to 30
+
+Your intern wrote the code - however, it is not giving the necessary result. Debug the code given in the IDE to fix the error and get the desired output.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-03T18:57:12.936Z  
+**Submitted:** 2026-08-03T18:58:51.559Z  
 
 ```py
-# cook your dish here
-t1=1430
-t2=1615
-h1=t1//100
-m1=t1%100
-tot1=(h1*60)+m1
-h2=t2//100
-m2=t2%100
-tot2=(h2*60)+m2
-print(tot2-tot1)
+# Debug the code given below
+temperature = 25
 
+# check
+result1 = (temperature >= 20) and (temperature <= 30)
+print(result1) 
 ```
 
 ---
