@@ -1,4 +1,3 @@
 # cook your dish here
-m=5
-n=6
-print(m**n)
+celsius=30
+print((celsius*9/5)+32)
