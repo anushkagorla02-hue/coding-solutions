@@ -4,38 +4,39 @@
 
 ## Problem
 
-### Strings and Integers
+### String length
 
 Listen
 
-Python uses the + sign for both addition and concatenation.
+We can use the len() function to get the length of a string.
 
-- Numbers are added.
-- Strings are concatenated.
-- We cannot mix the two
+For eg.
+
+```
+greeting = "hello"
+len_string = len(greeting)
+# len_string now stores the value of the length of greeting
+
+```
+
 ### Task
 
-You are given a program which does the following
+Write a program which does the following
 
-- You want to output 2569
-- Try running the given code given in the IDE as it is - it will give a Compilation error
-- Fix the error so that both the variables become strings and the output is 2569
+- Create a variable txt and assign it the text NumeroTres
+- Use the len() function to output to the console the number of characters in txt
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-04T13:38:21.695Z  
+**Submitted:** 2026-08-04T13:39:33.829Z  
 
 ```py
-# We need to output 2569 using string concatenation.
-# The code below is incorrect - Debug the code to solve the problem
-
-string1 = "25"
-string2 = "69"
-
-print(string1 + string2)
+# Update your code below this line
+txt="NumeroTres"
+print(len(txt))
 ```
 
 ---
