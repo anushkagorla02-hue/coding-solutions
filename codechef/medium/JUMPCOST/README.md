@@ -58,7 +58,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T16:03:07.273Z  
+**Submitted:** 2026-08-05T16:04:13.537Z  
 
 ```py
 # cook your dish here
@@ -68,26 +68,19 @@ for _ in range(t):
     n = int(input())
     a = list(map(int, input().split()))
 
-    balance = 0
+    dp = [0] * n
     ans = 0
-    curr = 0
 
-    while curr < n - 1:
-        best = -1000000
-        next_pos = -1
+    for j in range(1, n):
+        dp[j] = -10**18
 
-        for j in range(curr + 1, n):
-            gain = a[j] - (j + 1) + (curr + 1)
-            if gain > best:
-                best = gain
-                next_pos = j
+        for i in range(j):
+            gain = dp[i] + a[j] - (j + 1) + (i + 1)
+            if gain > dp[j]:
+                dp[j] = gain
 
-        if best <= 0:
-            break
-
-        balance += best
-        ans = max(ans, balance)
-        curr = next_pos
+        if dp[j] > ans:
+            ans = dp[j]
 
     print(ans)
 ```
