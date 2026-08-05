@@ -5,18 +5,25 @@ for _ in range(t):
     n = int(input())
     a = list(map(int, input().split()))
 
-    dp = [0] * n
+    balance = 0
     ans = 0
+    curr = 0
 
-    for j in range(1, n):
-        dp[j] = -10**18
+    while curr < n - 1:
+        best = -1000000
+        next_pos = -1
 
-        for i in range(j):
-            gain = dp[i] + a[j] - (j + 1) + (i + 1)
-            if gain > dp[j]:
-                dp[j] = gain
+        for j in range(curr + 1, n):
+            gain = a[j] - (j + 1) + (curr + 1)
+            if gain > best:
+                best = gain
+                next_pos = j
 
-        if dp[j] > ans:
-            ans = dp[j]
+        if best <= 0:
+            break
+
+        balance += best
+        ans = max(ans, balance)
+        curr = next_pos
 
     print(ans)
