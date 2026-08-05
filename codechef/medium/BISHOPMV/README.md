@@ -59,7 +59,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:18:56.325Z  
+**Submitted:** 2026-08-05T15:19:48.987Z  
 
 ```py
 # cook your dish here
@@ -70,7 +70,7 @@ for _ in range(t):
         print(0)
     elif (x1+y1)%2 != (x2+y2)%2:
         print(-1)
-    elif (x1-x2)==(y1-y2):
+    elif abs(x1-x2)==abs(y1-y2):
         print(1)
     else:
         print(2)
