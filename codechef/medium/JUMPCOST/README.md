@@ -58,11 +58,19 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:29:00.676Z  
+**Submitted:** 2026-08-05T15:44:43.681Z  
 
 ```py
 # cook your dish here
-
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    for i in range(1,n):
+        for j in range(i):
+            pos=a[i]-i+j
+            if a[pos]:
+                print(pos)
 ```
 
 ---
