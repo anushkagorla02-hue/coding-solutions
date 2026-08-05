@@ -9,7 +9,7 @@ for _ in range(t):
     ans = 0
 
     for j in range(1, n):
-        dp[j] = -10**10
+        dp[j] = -10**18
 
         for i in range(j):
             gain = dp[i] + a[j] - (j + 1) + (i + 1)
