@@ -58,24 +58,38 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T16:01:59.074Z  
+**Submitted:** 2026-08-05T16:03:07.273Z  
 
 ```py
 # cook your dish here
-t=int(input())
-arr=[]
+t = int(input())
+
 for _ in range(t):
-    n=int(input())
-    a=list(map(int,input().split()))
-    for i in range(1,n):
-        for j in range(i):
-            pos=a[i]-(i+1)+(j+1)
-            try:
-               if a[pos]:
-                  arr.append(pos)
-            except(IndexError):
-                arr=[]
-    print(len(arr))               
+    n = int(input())
+    a = list(map(int, input().split()))
+
+    balance = 0
+    ans = 0
+    curr = 0
+
+    while curr < n - 1:
+        best = -1000000
+        next_pos = -1
+
+        for j in range(curr + 1, n):
+            gain = a[j] - (j + 1) + (curr + 1)
+            if gain > best:
+                best = gain
+                next_pos = j
+
+        if best <= 0:
+            break
+
+        balance += best
+        ans = max(ans, balance)
+        curr = next_pos
+
+    print(ans)
 ```
 
 ---
