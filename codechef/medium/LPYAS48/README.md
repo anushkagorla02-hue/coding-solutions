@@ -4,32 +4,18 @@
 
 ## Problem
 
-Write a program that takes 3 string inputs from the user: a `name`, a `verb`, and a `place`. Use these inputs to construct a sentence in the following format:
-
-`"<name> is <verb> in the <place>"`
+Rectify the error in the code
 
 ### Sample 1:
 Input
 Output
 
 ```
-Alice dancing park
+5 5
 ```
 
 ```
-Alice is dancing in the park
-```
-
-### Sample 2:
-Input
-Output
-
-```
-Rohan chilling club
-```
-
-```
-Rohan is chilling in the club
+1
 ```
 
 ## Solution
@@ -37,12 +23,18 @@ Rohan is chilling in the club
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-06T15:42:02.754Z  
+**Submitted:** 2026-08-06T15:42:51.292Z  
 
 ```py
-# Update the code below this line.
-a,b,c=input().split()
-print(a,"is",b,"in the",c)
+# Take two numbers in a single line separated by space
+one, two = input().split()   # You need to separate the inputs by spaces
+
+# Convert inputs to integers
+one = int(one)
+two = int(two)
+
+print(one // two)      # Expected output for input "5 5" is 1
+
 ```
 
 ---
