@@ -4,10 +4,6 @@
 
 ## Problem
 
-### Hello user
-
-Listen
-
 Write a program which does the following
 
 - Declare a string variable x
@@ -42,7 +38,7 @@ Hello Chefina
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-06T14:57:45.741Z  
+**Submitted:** 2026-08-06T15:40:02.608Z  
 
 ```py
 # Update your code here
