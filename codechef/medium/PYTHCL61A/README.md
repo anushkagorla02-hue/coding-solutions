@@ -4,21 +4,20 @@
 
 ## Problem
 
-Write a program which does the following
+Write a program that takes 3 string inputs from the user: a `name`, a `verb`, and a `place`. Use these inputs to construct a sentence in the following format:
 
-- Declare a string variable x
-- Accept a text user input - the name of the user - and store it in the variable x
-- Output and print to the console Hello before the user defined name. Remember to add a space between Hello and x
+`"<name> is <verb> in the <place>"`
+
 ### Sample 1:
 Input
 Output
 
 ```
-Chef
+Alice dancing park
 ```
 
 ```
-Hello Chef
+Alice is dancing in the park
 ```
 
 ### Sample 2:
@@ -26,11 +25,11 @@ Input
 Output
 
 ```
-Chefina
+Rohan chilling club
 ```
 
 ```
-Hello Chefina
+Rohan is chilling in the club
 ```
 
 ## Solution
@@ -38,12 +37,12 @@ Hello Chefina
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-06T15:40:10.515Z  
+**Submitted:** 2026-08-06T15:41:49.125Z  
 
 ```py
-# Update your code here
-x=input()
-print("Hello",x)
+# Update the code below this line.
+a,b,c=input().split()
+print(a,"is",b,"in the",c)
 ```
 
 ---
