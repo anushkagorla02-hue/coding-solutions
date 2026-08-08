@@ -4,63 +4,32 @@
 
 ## Problem
 
-### Conditions in if statements
+### Multiple Choice Question
 
-Listen
-
-You are given a score that the player has achieved in a 100 point game.
-
-### Task
-
-Print some text based on below conditions:
-
-- If the score is 100, print "Perfect score"
-- If the score is less than 100, but greater or equal to 80, print "Almost perfect score"
-- If the score is less than 80, print "Nice try"
-### Sample 1:
-Input
-Output
+What will be the output of this code?
 
 ```
-100
-```
+a = 5
+b = 10
 
-```
-Perfect score
-```
+if a >= b:
+   print("a is greater or equal to b.")
+if a == 0:
+   print("a is 0.")
+if a <= 5:
+   print("a is not more than 5.")
+print("Program ends")
 
-### Sample 2:
-Input
-Output
-
-```
-85
-```
-
-```
-Almost perfect score
-```
-
-### Sample 3:
-Input
-Output
-
-```
-60
-```
-
-```
-Nice try
 ```
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T14:16:34.702Z  
+**Submitted:** 2026-08-08T14:17:34.170Z  
 
-```py
+```cpp
 score = int(input())
 if score==100:
     print("Perfect score")
