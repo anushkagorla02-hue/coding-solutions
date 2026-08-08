@@ -82,7 +82,7 @@ Not old enough to vote
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T17:59:35.897Z  
+**Submitted:** 2026-08-08T14:03:38.254Z  
 
 ```py
 # Update the '_' in the code below to solve the problem
