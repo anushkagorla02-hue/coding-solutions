@@ -82,12 +82,12 @@ Not old enough to vote
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-07T17:58:39.720Z  
+**Submitted:** 2026-08-07T17:59:35.897Z  
 
 ```py
 # Update the '_' in the code below to solve the problem
 
-age = 18
+age = int(input())
 
 if age>=18:
     print("Old enough to vote")
