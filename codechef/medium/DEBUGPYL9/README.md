@@ -4,71 +4,39 @@
 
 ## Problem
 
-### Incorrect Conditionals
+### Incorrect Index
 
 Listen
 
-`Incorrect conditionals` are one of the most common types of logical errors.
-They occur when you put an incorrect condition in if-else.
+Strings in Python have zero-based indexing.
+This means that the first index is 0.
+It is easy to forget that and use one-based indexing instead.
+This incorrect indexing leads to another logical error.
 
-### Example
-
-The code below is supposed to do the following
-
-- If an integer is even, then output even
-- If an integer is odd, then output odd
+ **Program to print the last character of the string** 
 
 ```
-n = 10
+s = input()       # input string
+n = len(s)        # find length of string
 
-if n % 2 == 0:
-    print("odd")
-else:
-    print("even")
-
-```
-
-The above code is incorrect because it outputs `odd` when the number is even.
-Changing the IF condition will fix the error.
-
-```
-n = 10
-
-if n % 2 != 0:
-    print("odd")
-else:
-    print("even")
+print(s[n - 1])   # Correct way to access the n-th character
+print(s[n]) # incorrect way
 
 ```
 
 ### Task
-
-Given a program to check whether a number is greater than 5 or not.
-
-- Run the code without changing anything, it will give wrong answer.
-- Find the wrong condition and correct it.
+- Given a program to print 1st, 4th and 6th character of a string
+- Find out the logical error and solve it
 ### Sample 1:
 Input
 Output
 
 ```
-5
+hellohowudoing
 ```
 
 ```
-the number is smaller than or equal to 5
-```
-
-### Sample 2:
-Input
-Output
-
-```
-6
-```
-
-```
-the number is greater than 5
+hlh
 ```
 
 ## Solution
@@ -76,16 +44,13 @@ the number is greater than 5
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T18:23:12.576Z  
+**Submitted:** 2026-08-09T18:25:54.617Z  
 
 ```py
-#if condition is wrong it should be changed to n>5
-n = int(input())
+# Change the indexing from one based to zero based
+s = input() 
 
-if n > 5:
-    print("the number is greater than 5")
-else:
-    print("the number is smaller than or equal to 5")
+print(s[0] + s[3] + s[5])
 
 ```
 
