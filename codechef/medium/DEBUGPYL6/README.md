@@ -4,56 +4,88 @@
 
 ## Problem
 
-### Compilation error continued
+### Runtime error
 
 Listen
 
-How do you identify `Compilation error`?
+We saw two different syntax errors in the last lesson.
+There are many different types of syntax errors, but they are generally easiest to debug as the error description clearly explains what needs to be fixed.
 
-When you run your code and there is an error, you will typically see it in the output.
+Let us now learn about  **`Runtime errors`** 
 
-For example if you run the below code, you will get a syntax error.
+### Runtime error
 
-```
-name = "piyush"
-if name == "piyush"
-    print(name)
+Runtime error occurs when your syntax is correct but the compiler (or interpreter in case of Python), is still not able to run the code due to an error.
 
-```
-
- **Error** 
+Example :-
 
 ```
-  File "/mnt/sol.py", line 2
-    if name == "piyush"
-                       ^
-SyntaxError: expected ':'
-
-# The error description says that there is a error on line 2. The exact error is explained on the last line of the description: `SyntaxError: expected ':'`.
+a = 5
+b = 0
+c = a / b
 
 ```
 
-It is clearly saying that a : (colon) is expected after the IF statement.
-The error goes away after adding : (colon).
+If you run the above code, you will get this error.
+
+```
+Traceback (most recent call last):
+  File "/mnt/sol.py", line 3, in <module>
+    c = a / b
+        ~~^~~
+ZeroDivisionError: division by zero
+
+```
+
+There is an error in line 3 because we are trying to divide 5 by 0 which is not possible.
 
 ### Task
-- Submit the code present in IDE as it is.
-- Read the error statement and understand what needs to be fixed.
-- Fix the code so that it correctly outputs: "Even".
+- There is a sample code present in IDE, which inputs two number and prints their division.
+- If you run the code for a test case like 3 0 you will get the runtime error.
+- To fix it, add an if condition which checks if the value of b is 0 and output infinity directly. Otherwise output the result of integer division using //.
+### Sample 1:
+Input
+Output
+
+```
+3 0
+```
+
+```
+infinity
+```
+
+### Sample 2:
+Input
+Output
+
+```
+5 2
+```
+
+```
+2
+```
+
+### Explanation:
+
+5 // 2 = Rounded down value of 5 / 2 - hence output is 2.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-09T18:16:11.362Z  
+**Submitted:** 2026-08-09T18:18:32.973Z  
 
 ```py
-age = 28
-if age % 2 == 0:
-    print("Even")
+# Add an if /else condition to the code below
+
+a, b = map(int, input().split())
+if b==0:
+    print("infinity")
 else:
-    print("Odd")
+    print(a // b)
 ```
 
 ---
