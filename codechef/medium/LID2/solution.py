@@ -1,4 +1,5 @@
-# print the 2nd last element from the following list. Update the '_' in the code below
+# Update the code below to solve the problem
 
-list = ["lock","key","barrier","sign","door"]
-print(list[ -2])
+months = ["January", "February", "March", "April", "May", "June", "July"]
+print(months[0:6])
+print(months[1:5])
