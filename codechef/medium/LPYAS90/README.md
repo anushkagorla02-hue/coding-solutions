@@ -4,20 +4,22 @@
 
 ## Problem
 
-Rectify the errors in the program to get the desired output
+Rectify the errors in the program to correctly print the last character of the input string.
 
-Check the sample input / output below for further clarity.
-
+### Input Format
+- Input contains a single string without any space in between.
+### Output Format
+- Print the last character of the string.
 ### Sample 1:
 Input
 Output
 
 ```
-1
+apple
 ```
 
 ```
-Option 1 selected
+e
 ```
 
 ### Sample 2:
@@ -25,35 +27,11 @@ Input
 Output
 
 ```
-2
+Codechef
 ```
 
 ```
-Option 2 selected
-```
-
-### Sample 3:
-Input
-Output
-
-```
-3
-```
-
-```
-Option 3 selected
-```
-
-### Sample 4:
-Input
-Output
-
-```
-Any number other than 1, 2 or 3
-```
-
-```
-Invalid choice
+f
 ```
 
 ## Solution
@@ -61,21 +39,13 @@ Invalid choice
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T17:40:40.684Z  
+**Submitted:** 2026-08-11T17:39:46.776Z  
 
 ```py
-# Update the code below to debug the problem
-choice = int(input())
-
-if choice == 1:
-    print("Option 1 selected")
-elif choice == 2:
-    print("Option 2 selected")
-elif choice == 3:
-    print("Option 3 selected")
-else:
-    print("Invalid choice")
-
+# Debug and fix the code
+str = input()
+n = len(str)
+print(str[n-1]) 
 ```
 
 ---
