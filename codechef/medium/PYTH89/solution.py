@@ -1,3 +1,4 @@
-# Update your code below this line
-num=[10,20,30,40,50,60]
-print(len(num))
+# Update the code below this line
+days=["Monday","Tuesday","Wednesday","Thursday"]
+print(days[-2])
+print(days[-1])
