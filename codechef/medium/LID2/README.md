@@ -4,37 +4,54 @@
 
 ## Problem
 
-### Negative Indexing
+### Slicing a list
 
 Listen
 
-List items can also be negatively indexed:
+Similar to what we saw in slicing of strings, you can slice lists as well.
+You can specify a range of consecutive indexes by specifying where to start and where to end the range in this manner - `print(list[1:4])`.
+This will print elements from index number  **1**  to  **3**.
+
+ **Note** :
+
+- Indexing starts from 0.
+- Item on index no 4 will not be printed as the end index is excluded.
+
+For eg -
 
 ```
-            -3      -2     -1      - index numbers
-         ["red","Green","Blue"]  - the list
+a = ["Juke", "King", "Hearts", "68", "Kite"]
+print(a[1:4])
 
 ```
 
- **Note**  - Indexing always starts from  **`-1`**  when going right to left.
+The output will be
+
+```
+["King", "Hearts", "68"]
+
+```
+
+### Task
 
 Write a program which does the following:
 
-- Create a list containing the elements - "lock", "key", "barrier", "sign" and "door"
-- Print the 2nd last element from the given list. i.e. - reading from right to left, print the 2nd element
+- Create a list m of the first 7 months in a year
+- Output the following to the console on separate lines Print the first 6 months of the year Print the 2nd to 5th month of the year - both 2nd and 5th included
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T17:51:46.115Z  
+**Submitted:** 2026-08-11T17:54:55.854Z  
 
 ```py
-# print the 2nd last element from the following list. Update the '_' in the code below
+# Update the code below to solve the problem
 
-list = ["lock","key","barrier","sign","door"]
-print(list[ -2])
+months = ["January", "February", "March", "April", "May", "June", "July"]
+print(months[0:6])
+print(months[1:5])
 ```
 
 ---
