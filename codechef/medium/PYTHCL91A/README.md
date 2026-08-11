@@ -4,65 +4,59 @@
 
 ## Problem
 
-Chef considers the climate HOT if the temperature is above 20, otherwise he considers it COLD.
-You are given the temperature C, find whether the climate is HOT or COLD.
+The code in the IDE checks if a number is positive, negative or zero. But this program has a compilation error. Run the program to check the error and fix it.
 
-### Input Format
-- The first and only line of each test case contains a single integer, the temperature C
-### Output Format
-
-print on a new line whether the climate is HOT or COLD.
-
-You may print each character of the string in either uppercase or lowercase (for example, the strings hOt, hot, Hot, and HOT will all be treated as identical).
-
-### Constraints
-- 0≤C≤40
 ### Sample 1:
 Input
 Output
 
 ```
-21
+5
 ```
 
 ```
-HOT
+The number is positive
 ```
-
-### Explanation:
-
-The temperature is 21, which is more than 20. So, Chef considers the climate HOT.
 
 ### Sample 2:
 Input
 Output
 
 ```
-16
+0
 ```
 
 ```
-COLD
+The number is zero
 ```
 
-### Explanation:
+### Sample 3:
+Input
+Output
 
-The temperature is 16, which is not more than 20. So, Chef considers the climate COLD.
+```
+-3
+```
+
+```
+The number is negative
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-11T17:35:52.688Z  
+**Submitted:** 2026-08-11T17:36:58.969Z  
 
 ```py
-# your code goes here
-C = int(input())
-if C > 20:
-    print("HOT")
+number = int(input())
+if number > 0:
+    print("The number is positive")
+elif number == 0:
+    print("The number is zero")
 else:
-    print("COLD")
+    print("The number is negative")
 
 ```
 
