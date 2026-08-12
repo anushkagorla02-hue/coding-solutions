@@ -73,18 +73,18 @@ It can be verified that using fewer than two operations is not enough to make $N
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:19:26.102Z  
+**Submitted:** 2026-08-12T16:20:45.396Z  
 
 ```py
 # cook your dish here
 t=int(input())
 for _ in range(t):
     n=int(input())
-    if n%5==0:
+    if n%2==0:
         print(1)
     elif n%3==0:
         print(0)
-    elif n%2==0:
+    elif n%5==0:
         print(1)
     else:
         print(2)
