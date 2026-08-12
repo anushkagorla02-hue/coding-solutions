@@ -4,27 +4,16 @@
 
 ## Problem
 
-### Multiple Choice Question
-
-What is the output of this code?
-
-```
-a = 4
-b = 1
-while (a != b):
-   print(b)
-   b = b + 1
-
-```
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:47:18.114Z  
+**Submitted:** 2026-08-12T16:46:32.183Z  
 
-```cpp
+```py
 # Update your code below this line
 
 num = int(input())
