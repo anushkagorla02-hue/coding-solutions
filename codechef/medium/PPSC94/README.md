@@ -4,26 +4,25 @@
 
 ## Problem
 
-### Prime Number
+### Sum of Even Integers
 
 Listen
 
-The last challenge of the while loop.
+You are given an integer $N$.
 
-Chef wants to write a code which checks if a given number is prime.
+You need to output the sum of all even integers from 1 to $N$.
+Check the sample output given below.
 
-- You are given a whole number N.
-- Your task is to determine if N is a prime number or not and print "Yes" if it is prime, or "No" if it is not.
 ### Sample 1:
 Input
 Output
 
 ```
-14635
+5
 ```
 
 ```
-No
+6
 ```
 
 ### Sample 2:
@@ -31,11 +30,11 @@ Input
 Output
 
 ```
-13
+10
 ```
 
 ```
-Yes
+30
 ```
 
 ## Solution
@@ -43,24 +42,18 @@ Yes
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T17:16:05.398Z  
+**Submitted:** 2026-08-12T17:17:46.703Z  
 
 ```py
-n = int(input())
-isPrime = True # Assume n is prime
+# cook your dish here
+N = int(input())
+sum = 0
 
-i = 2
-while i < n:
-    # Update your code below this line
-    if n%i==0:
-        isPrime=False
-        break
-    
-    i+=1
-if isPrime:
-    print('Yes')
-else:
-    print('No')
+for i in range(1, N + 1):
+    if i % 2 == 0:
+        sum = sum + i
+
+print(sum)
 ```
 
 ---
