@@ -1,15 +1,9 @@
-n = int(input())
-isPrime = True # Assume n is prime
+# cook your dish here
+N = int(input())
+sum = 0
 
-i = 2
-while i < n:
-    # Update your code below this line
-    if n%i==0:
-        isPrime=False
-        break
-    
-    i+=1
-if isPrime:
-    print('Yes')
-else:
-    print('No')
+for i in range(1, N + 1):
+    if i % 2 == 0:
+        sum = sum + i
+
+print(sum)
