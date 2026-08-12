@@ -1,3 +1,5 @@
-# Update your code below this line
-for i in range(10):
-    print(i*i)
+# Update the code below
+
+n = int(input())
+for i in range(1,11):
+    print(n,"x",i,"=",n*i)
