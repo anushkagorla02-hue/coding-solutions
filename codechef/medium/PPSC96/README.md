@@ -4,25 +4,30 @@
 
 ## Problem
 
-### Power of a Number
+### Fibonacci Series
 
 Listen
 
-You are given 2 space separated integers $N$ and $m$.
+You are given an integer $N$.
 
-You need to output the value $N^m$.
+You need to output the first $N$ numbers of the Fibonacci Series.
 Check the sample output given below.
+
+ **Note:**  A Fibonacci number is a series of numbers in which each number is obtained by adding the two preceding numbers.
+
+F1 = 0, F2 = 1
+FN = FN-2 + FN-1
 
 ### Sample 1:
 Input
 Output
 
 ```
-5 3
+5
 ```
 
 ```
-125
+0 1 1 2 3
 ```
 
 ### Sample 2:
@@ -30,11 +35,11 @@ Input
 Output
 
 ```
-8 4
+8
 ```
 
 ```
-4096
+0 1 1 2 3 5 8 13
 ```
 
 ## Solution
@@ -42,12 +47,24 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T17:26:40.784Z  
+**Submitted:** 2026-08-12T17:25:23.555Z  
 
 ```py
-# cook your dish here
-n,m=map(int,input().split())
-print(n**m)
+# Update the '_' to solve the problem
+
+n = int(input())
+a = 0
+b = 1
+
+print(a, b, end=" ")
+
+
+for i in range(n-2):
+    c = a+b # set currrent number as sum of previous two numbers
+    print(c, end=" ")
+    # Update a and b as next two numbers
+    a = b
+    b=c
 ```
 
 ---
