@@ -1,11 +1,8 @@
-# Update the '_' to solve the problem
-
-n = int(input())
-factorial = 1  
-i = 1
-
-while i <= n:
-    factorial = factorial * i
-    i = i+1
-    
-print(factorial)
+# cook your dish here
+n=int(input())
+a=1
+sum1=0
+while a<n+1:
+    sum1+=a
+    a+=1
+print(sum1)
