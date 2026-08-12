@@ -9,8 +9,8 @@
 What is the output of this code?
 
 ```
-a = 1
-b = 4
+a = 4
+b = 1
 while (a != b):
    print(b)
    b = b + 1
@@ -22,7 +22,7 @@ while (a != b):
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:47:30.605Z  
+**Submitted:** 2026-08-12T16:47:18.795Z  
 
 ```cpp
 # Update your code below this line
