@@ -88,15 +88,15 @@ $6$ is even, so the answer is `Yes`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T15:58:50.710Z  
+**Submitted:** 2026-08-12T16:00:05.714Z  
 
 ```py
 # cook your dish here
 a,b=map(int,input().split())
-s="False"
+s="No"
 for i in range(a+1,b):
     if a!=b or i%2==0:
-        s="True"
+        s="Yes"
         break
 print(s)
 ```
