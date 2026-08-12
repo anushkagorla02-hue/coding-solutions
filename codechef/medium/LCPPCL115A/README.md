@@ -4,54 +4,57 @@
 
 ## Problem
 
-### Print Numbers 5 - 20
+### While Loop
 
 Listen
 
+LOOPS can execute a block of code as long as a specified condition is reached.
+They are handy because they save time, reduce errors, and they make code more readable.
+
+The WHILE LOOP loops through a block of code as long as a specified condition is true:
+
+```
+while (condition):
+    // code to be executed
+
+```
+
+Example
+
+```
+counter = 0
+while counter < 5:
+    print("The counter is:", counter)
+    counter = counter + 1
+
+```
+
+In the example above, the WHILE loop is executed as long as the condition `'counter < 5'` is true.
+The initial value of `'counter'` is 0.
+The code block inside the loop prints the value of Counter and increments it by 1 with the statement Counter = Counter + 1.
+The loop will continue executing until `'counter'` becomes equal to or greater than 5.
+
 ### Task
 
-You have to print numbers from 5 to 20 in separate lines using a while loop.
+Write a program which does the following
 
-- When using a loop you have to think about three things - initialisation, condition and update statement.
-- So think about what we initialise the variable with? i.e., Where does the sequence start form?
-- Think about what the condition will be? i.e., Till where is the sequence going?
-- Also think about how the variable will be updating after every iteration. How the terms in the sequence are changing?
-### Expected Output
-
-```
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-
-```
+- Declare a variable a and initialize it to 0
+- Use the syntax above to create a loop, output the following to the console Print the variable a in separate lines as long as it is less than 7. Don't print any other text. Increment a by 1 in each iteration.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T16:40:16.396Z  
+**Submitted:** 2026-08-12T16:39:20.172Z  
 
 ```py
-i = 5# Initialisation
+# Update the code below this line
 
-while i<21: # Condition
-    print(i)
-    i+=1 # Update statement
-
+a = 0
+while a<7:
+    print(a)
+    a=a+1
 ```
 
 ---
