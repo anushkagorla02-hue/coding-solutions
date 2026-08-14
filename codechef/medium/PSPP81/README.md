@@ -4,83 +4,69 @@
 
 ## Problem
 
-### Variable scope
+### Calling a function within function
 
 Listen
 
-Scope in Python can be broadly categorized into two types:  **global scope**  and  **local scope** 
+Functions can also call other functions in Python.
 
-#### Global scope
-- Variables defined outside of any function have global scope.
-- These variables can be accessed from anywhere in the code, both inside and outside functions.
+Check the sample code given below
 
 ```
-global_var = 10
+# Function to calculate the square of a number
+def square(num):
+    return num * num
 
-def my_function():
-    print(global_var)  # Accessing the global variable
+def square_and_double(num):
+    # Call the square function to calculate square
+    squared = square(num)
 
-print(global_var)  # Accessible here
-my_function()  # Calls the function, which accesses global_var internally
+    # Double the squared result
+    return 2 * squared
 
-```
+# Call the square_and_double function with the argument 3
+result = square_and_double(3)
 
- **Output** 
-
-```
-10
-10
+print("Result:", result)     # Output will be 'Result: 18'
 
 ```
 
-Once we defined the `global_var` at the top, it can be used anywhere in the code.
+### Task
+- The editor contains an incomplete code.
+- Update the function greet_and_capitalize by calling the above defined functions inside it to get the expected output.
 
-#### Local scope
-- Variables defined within a function have local scope, meaning they are accessible only within that function.
-- Local scope is limited to the function where the variable is defined.
-
-```
-def my_function():
-    local_var = 20  # Local variable
-    print(local_var)  # Accessible here
-
-print(local_var)  # Error: local_var is not defined (outside its scope)
+ **Expected output** 
 
 ```
+Final Result: HELLO, ALICE!
 
-Because the `local_var` was defined inside the function, you cannot print it outside the function.
-
-#### Accessing Variables from Different Scopes
-- A function can access variables in its local scope, as well as variables in the global scope.
-- However, a local variable will take precedence over a global variable if they have the same name.
-
- **Review the code in the IDE and click on 'Submit' to know the result.**
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T16:03:18.002Z  
+**Submitted:** 2026-08-14T18:45:16.761Z  
 
 ```py
-# Click on submit to see the result
+def greet(name):
+    return f"Hello, {name}!"
 
-# Global variable
-x = 10
+def capitalize(text):
+    return text.upper()
 
-def my_function():
-    # Local variable with the same name as the global variable
-    x = 20
-    
-    # Accesses the local variable
-    print(x)
+# Solution as follows
+def greet_and_capitalize(name):
+    greeting = greet(name)
+    return capitalize(greeting)
 
-my_function()
-# Output: 20
+# Call the functions
+name = "Alice"
+final_result = greet_and_capitalize(name)
 
-print(x)
-# Output: 10 (global variable is not affected)
+# Display the results
+print("Final Result:", final_result)
 
 ```
 
