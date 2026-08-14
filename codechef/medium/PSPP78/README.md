@@ -4,29 +4,58 @@
 
 ## Problem
 
-_Description not available._
+### Functions continued
+
+Listen
+
+In the previous task you had to compute the square and cube of each number.
+This can get very long if you have more numbers.
+
+Functions allow you to break down a complex program into smaller, manageable modules.
+Each function can represent a specific task or functionality.
+Once defined, functions can be reused in different parts of the program or even in different programs, promoting code reuse and saving development time.
+
+Look at the code in the IDE for the previous problem which highlights the implementation of function.
+Review the code and click on `Submit` to proceed.
+
+In the next lesson we will learn about the syntax of functions.
+
+### Sample 1:
+Input
+Output
+
+```
+ 
+```
+
+```
+4
+8
+9
+27
+16
+64
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T15:39:10.442Z  
+**Submitted:** 2026-08-14T15:40:30.225Z  
 
 ```py
-two = 2
-three = 3
-four = 4
-def square(i):
-    return i*i
-def cube(j):
-    return j**3
-print(square(two))
-print(cube(two))
-print(square(three))
-print(cube(three))
-print(square(four))
-print(cube(four))
+def calculate_square_and_cube(number):
+    square = number ** 2
+    cube = number ** 3
+    print(square)
+    print(cube)
+
+# Using the function for numbers 2, 3, and 4
+calculate_square_and_cube(2)
+calculate_square_and_cube(3)
+calculate_square_and_cube(4)
+
 ```
 
 ---
