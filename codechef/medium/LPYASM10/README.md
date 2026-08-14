@@ -4,10 +4,16 @@
 
 ## Problem
 
-Create a function called calculator that takes three parameters: two numbers and an operator (as a string: '+', '-', '*', '/').
-The function should return the result of the operation.
-If division by zero is attempted, return "Cannot divide by zero".
-Check the sample input / output below for further clarity
+Create a function called password_validator that takes a password string as input from the user.
+
+You need to output True if the password meets all requirements, False otherwise.
+Requirements are as follows
+
+- Password is at least 8 characters long
+- Password contains at least one uppercase letter, and
+- Password contains at least one number.
+
+Check the sample input / output below for further clarity.
 
 ### Input Format
 
@@ -19,12 +25,11 @@ Input
 Output
 
 ```
-2 3
-+
+abc123
 ```
 
 ```
-5
+False
 ```
 
 ### Sample 2:
@@ -32,53 +37,63 @@ Input
 Output
 
 ```
-3 2
-/
+abcdefgh
 ```
 
 ```
-1.5
+False
 ```
+
+### Explanation:
+
+Missing at least 1 uppercase character and 1 number
 
 ### Sample 3:
 Input
 Output
 
 ```
-3 0
-/
-
+abcDef123
 ```
 
 ```
-Cannot divide by zero
+True
 ```
+
+### Explanation:
+
+Meets all 3 requirements
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T19:02:25.930Z  
+**Submitted:** 2026-08-14T19:07:51.693Z  
 
 ```py
-# Update the function below
-def calculator(num1, num2, operator):
-    if operator=='+':
-        print(num1+num2)
-    elif operator=='-':
-        print(num1-num2)
-    elif operator=='*':
-        print(num1*num2)
-    elif operator=='/':
-        if num2==0:
-            print("Cannot divide by zero")
-        else:
-            print(num1/num2)
+def password_validator(password):
+    # complete the function 
+    if len(password)<8:
+        return False
+    hasupper=False
+    hasdigit=False
+    for char in password:
+        if char.isupper():
+            hasupper=True
+        if char.isdigit():
+            hasdigit=True
+    if hasupper and hasdigit:
+        return True
+    else:
+        return False
     
-num1, num2 = map(int, input().split())
-operator = input()
-calculator(num1, num2, operator)
+    
+    
+
+password = input()
+result = password_validator(password)
+print(result)
 ```
 
 ---
