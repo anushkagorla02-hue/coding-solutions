@@ -4,10 +4,6 @@
 
 ## Problem
 
-### Sum of Even Integers
-
-Listen
-
 You are given an integer $N$.
 
 You need to output the sum of all even integers from 1 to $N$.
@@ -42,17 +38,17 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T17:17:46.703Z  
+**Submitted:** 2026-08-14T14:48:33.882Z  
 
 ```py
 # cook your dish here
-N = int(input())
-sum = 0
-
-for i in range(1, N + 1):
-    if i % 2 == 0:
-        sum = sum + i
-
+n=int(input())
+sum=0
+i=1
+while i<n:
+    if i%2==0:
+        sum+=i
+    i+=1
 print(sum)
 ```
 
