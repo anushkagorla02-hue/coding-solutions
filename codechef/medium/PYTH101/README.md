@@ -4,10 +4,6 @@
 
 ## Problem
 
-### Factorial of any number
-
-Listen
-
 Write a program that does the following
 
 - Declare an integer variable num and initialize it to a user defined input
@@ -30,7 +26,7 @@ The factorial of the given number is: 720
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T17:03:38.947Z  
+**Submitted:** 2026-08-14T14:41:48.750Z  
 
 ```py
 # Debug the code below to output the factiorial of a user defined input n
@@ -41,7 +37,7 @@ i = 1
 factorial = 1
 
 while i <= n:
-    factorial = i * factorial
+    factorial = i* factorial
     i = i + 1
     
 print("The factorial of the given number is:", factorial)
