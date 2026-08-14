@@ -1,13 +1,10 @@
-two = 2
-three = 3
-four = 4
-def square(i):
-    return i*i
-def cube(j):
-    return j**3
-print(square(two))
-print(cube(two))
-print(square(three))
-print(cube(three))
-print(square(four))
-print(cube(four))
+def calculate_square_and_cube(number):
+    square = number ** 2
+    cube = number ** 3
+    print(square)
+    print(cube)
+
+# Using the function for numbers 2, 3, and 4
+calculate_square_and_cube(2)
+calculate_square_and_cube(3)
+calculate_square_and_cube(4)
