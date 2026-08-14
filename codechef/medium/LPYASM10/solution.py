@@ -1,17 +1,22 @@
-# Update the function below
-def calculator(num1, num2, operator):
-    if operator=='+':
-        print(num1+num2)
-    elif operator=='-':
-        print(num1-num2)
-    elif operator=='*':
-        print(num1*num2)
-    elif operator=='/':
-        if num2==0:
-            print("Cannot divide by zero")
-        else:
-            print(num1/num2)
+def password_validator(password):
+    # complete the function 
+    if len(password)<8:
+        return False
+    hasupper=False
+    hasdigit=False
+    for char in password:
+        if char.isupper():
+            hasupper=True
+        if char.isdigit():
+            hasdigit=True
+    if hasupper and hasdigit:
+        return True
+    else:
+        return False
     
-num1, num2 = map(int, input().split())
-operator = input()
-calculator(num1, num2, operator)
+    
+    
+
+password = input()
+result = password_validator(password)
+print(result)
