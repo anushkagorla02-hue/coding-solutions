@@ -38,14 +38,14 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-14T14:48:33.882Z  
+**Submitted:** 2026-08-14T14:49:07.439Z  
 
 ```py
 # cook your dish here
 n=int(input())
 sum=0
 i=1
-while i<n:
+while i<=n:
     if i%2==0:
         sum+=i
     i+=1
