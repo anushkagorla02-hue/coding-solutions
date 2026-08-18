@@ -4,57 +4,45 @@
 
 ## Problem
 
-### Tuple unpacking
+### Length and count of elements in a tuple
 
 Listen
 
-Tuple unpacking, also known as tuple destructuring, is a feature in Python that allows you to assign the elements of a tuple to individual variables in a single assignment statement.
-This makes it easy to extract and work with the individual elements of a tuple.
-
-Example
+For tuples, `len()` returns the number of elements.
 
 ```
-my_tuple = (1, 'hello', 3.14)
+my_tuple = (1, 2, 3, 4, 5)
+print("Length of the tuple:", len(my_tuple))  # Output: Length of the tuple: 5
 
-# Unpack the tuple into separate variables
-a, b, c = my_tuple
+```
 
-# Print the unpacked variables
-print("a:", a)  # Output: a: 1
-print("b:", b)  # Output: b: hello
-print("c:", c)  # Output: c: 3.14
+For tuples, `count()` allows you to count the occurrences of a specified value.
+
+```
+my_tuple = (1, 2, 2, 3, 2, 4, 5, 2)
+print("Number of occurrences of 2:", my_tuple.count(2))  # Output: Number of occurrences of 2: 4
 
 ```
 
 ### Task
 
-We have defined a tuple for you in the IDE.
-Update the code to get the output as defined in the sample output below.
-
-### Sample 1:
-Input
-Output
+What is the expected output for the following code?
 
 ```
- 
-```
-
-```
-Bob
-English
-20
-Z
+student = ([2, 2], [2, 2, 2], 2, 3)
+print(len(student))
+print(student.count(2))
 
 ```
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T15:25:12.833Z  
+**Submitted:** 2026-08-18T15:26:49.679Z  
 
-```py
+```cpp
 student = (["Alice", "Bob"], ["Math", "Science", "English"], 20, 'XYZ')
 
 # Update the code below this line
