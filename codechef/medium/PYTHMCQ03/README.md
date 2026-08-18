@@ -4,18 +4,16 @@
 
 ## Problem
 
-### MCQ on output in separate lines
-
-How do we print output on separate lines in Python?
+_Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T15:58:07.114Z  
+**Submitted:** 2026-08-18T15:57:34.186Z  
 
-```cpp
+```py
 # Update the '_' below to solve the problem
 
 print(11* 13)          # Area of the rectangle
