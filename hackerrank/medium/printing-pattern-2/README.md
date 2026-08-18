@@ -29,7 +29,7 @@ $1 \le n \le 1000$
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-28T16:31:01.221Z  
+**Submitted:** 2026-08-18T17:16:23.140Z  
 
 ```c
 #include <stdio.h>
