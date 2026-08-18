@@ -8,12 +8,12 @@ _Description not available._
 
 ## Solution
 
-**Language:** C++  
+**Language:** default  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-22T15:05:59.048Z  
+**Submitted:** 2026-08-18T16:07:37.302Z  
 
-```cpp
+```default
 # Replace the code print(__ + __) with print(21 + 40)
 
 print(21+ 40)
