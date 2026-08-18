@@ -4,34 +4,26 @@
 
 ## Problem
 
-### Length and count of elements in a tuple
+### Debug this code
 
-Listen
-
-For tuples, `len()` returns the number of elements.
+What will the following code output?
 
 ```
-my_tuple = (1, 2, 3, 4, 5)
-print("Length of the tuple:", len(my_tuple))  # Output: Length of the tuple: 5
+def manipulate_tuple(my_tuple):
+    # Add an element to the tuple
+    my_tuple.append(4)
+    
+    # Remove the first element
+    my_tuple.remove(1)
 
-```
+    # Access an element beyond the tuple's range
+    print("Third element:", my_tuple[2])
 
-For tuples, `count()` allows you to count the occurrences of a specified value.
+# Create a tuple
+my_tuple = (1, 2, 3)
 
-```
-my_tuple = (1, 2, 2, 3, 2, 4, 5, 2)
-print("Number of occurrences of 2:", my_tuple.count(2))  # Output: Number of occurrences of 2: 4
-
-```
-
-### Task
-
-What is the expected output for the following code?
-
-```
-student = ([2, 2], [2, 2, 2], 2, 3)
-print(len(student))
-print(student.count(2))
+# Call the function to manipulate the tuple
+manipulate_tuple(my_tuple)
 
 ```
 
@@ -40,7 +32,7 @@ print(student.count(2))
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T15:27:18.909Z  
+**Submitted:** 2026-08-18T15:28:28.141Z  
 
 ```cpp
 student = (["Alice", "Bob"], ["Math", "Science", "English"], 20, 'XYZ')
