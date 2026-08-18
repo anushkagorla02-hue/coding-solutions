@@ -40,7 +40,7 @@ print(student.count(2))
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T15:27:08.881Z  
+**Submitted:** 2026-08-18T15:27:18.909Z  
 
 ```cpp
 student = (["Alice", "Bob"], ["Math", "Science", "English"], 20, 'XYZ')
