@@ -1,3 +1,5 @@
 # cook your dish here
-for i in range(1,6):
-    print(i,'-',i**2)
+for i in range(4):
+    for j in range(4):
+        print("*",end="")
+    print()
