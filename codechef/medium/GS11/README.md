@@ -4,69 +4,80 @@
 
 ## Problem
 
-### Test cases with multiple types of input
+### Test cases with multiple lines of input
 
 Listen
 
-In the previous problem, each testcase had 2 lines of input - each consisting of integers.
-Test cases can also contain a combination of integers and strings.
+In the previous problem, we had t test cases and each test case had 1 line of input.
+However, each test case can have multiple lines of input as well.
+We learned how to take multiple inputs in a single line here.
 
 ### Task
 
 Lets write a program in the IDE which performs the following
 
-- The 1st line of input contains $t$ - the count of testcases Each testcase consists of the following $2$ lines of input The 1st line of the testcase contains 2 integers - accept them as variables $A$ and $B$ The 2nd line of the testcase contains 1 string - accept it as a variable $C$
-- For each test case, output on one line the 2 integers followed by the string
+- The 1st line of input is an integer $t$ - the count of test cases
+- Each test case consists of 2 lines of input The 1st line of input has 2 space separated integers - accept them as variables $A$ and $B$ The 2nd line of input has 3 space separated integers - accept them as variables $C$, $D$ and $E$
+- For each test case - output all integers on a single line
 ### Sample 1:
 Input
 Output
 
 ```
-2
+3
 1 2
-abcde
-34 567
-A1B2C3
+3 4 5
+11 22
+33 44 55
+1 23
+456 789 101112
 ```
 
 ```
-1 2 abcde
-34 567 A1B2C3
+1 2 3 4 5
+11 22 33 44 55
+1 23 456 789 101112
 ```
 
 ### Explanation:
 
-Test case 1:
+2 lines of input in test case 1:
 1 2
-abcde
+3 4 5
 
-Output for test case 1: 1 2 abcde
+Output 1: 1 2 3 4 5
 
-Test case 2:
-34 567
-A1B2C3
+2 lines of input in test case 2:
+11 22
+33 44 55
 
-Output for test case 2: 34 567 A1B2C3
+Output 2: 11 22 33 44 55
+
+2 lines of input in test case 3:
+1 23
+456 789 101112
+
+Output 3: 1 23 456 789 101112
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T15:53:05.653Z  
+**Submitted:** 2026-08-18T15:52:00.233Z  
 
 ```py
-t = int(input())
+t = int(input())       
 
-for i in range(t):
-    # accept 2 integers on the 1st line of each test case
-    A, B = map(int,input().split())
+for i in range(t):     
+    # accept 2 integers on the 1st line using map
+    A,B=map(int,input().split())
     
-    # accept 1 string on the 2nd line of each test case
-    C = input()
+    # accept 3 integers on the 2nd line using map
     
-    # output the 2 integers and 1 string on a single line
-    print(A,B,C)
+    C,D,E=map(int,input().split())
+    # output the 5 integers on a single line for each test case
+    print(A, B, C, D, E)
 
 ```
 
