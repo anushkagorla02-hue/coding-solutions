@@ -4,48 +4,65 @@
 
 ## Problem
 
-### List as part of a tuple
+### Tuple unpacking
 
 Listen
 
-A tuple can hold elements of various types, including lists, which makes tuples versatile for storing a mix of different data structures.
+Tuple unpacking, also known as tuple destructuring, is a feature in Python that allows you to assign the elements of a tuple to individual variables in a single assignment statement.
+This makes it easy to extract and work with the individual elements of a tuple.
 
-Consider the syntax below
+Example
 
 ```
-my_list = [1, 2, 3]
-my_tuple = ("Alice", 30, my_list)
+my_tuple = (1, 'hello', 3.14)
 
-print("Tuple:", my_tuple)   # Output - Tuple: ('Alice', 30, [1, 2, 3])
+# Unpack the tuple into separate variables
+a, b, c = my_tuple
+
+# Print the unpacked variables
+print("a:", a)  # Output: a: 1
+print("b:", b)  # Output: b: hello
+print("c:", c)  # Output: c: 3.14
 
 ```
 
 ### Task
 
-Consider the tuple defined as follows
+We have defined a tuple for you in the IDE.
+Update the code to get the output as defined in the sample output below.
+
+### Sample 1:
+Input
+Output
 
 ```
-student = ("Alice", 20, ["Math", "Science", "English"])
-
+ 
 ```
 
-What will be the output for `print(student[2])`?
+```
+Bob
+English
+20
+Z
+
+```
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-17T17:12:34.128Z  
+**Submitted:** 2026-08-18T15:25:09.962Z  
 
-```cpp
-# Click on 'Submit' to view the result
+```py
+student = (["Alice", "Bob"], ["Math", "Science", "English"], 20, 'XYZ')
 
-data_tuple = (10, 3.14, 'Hello, World!', True)
-
-for element in data_tuple:
-    print("Element:", element, ", Type:", type(element))
-
+# Update the code below this line
+list1,list2,num,string=student
+print(list1[1])
+print(list2[2])
+print(num)
+print(string[2])
 ```
 
 ---
