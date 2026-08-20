@@ -23,7 +23,7 @@ Print each word of the sentence in a new line.
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-18T17:15:40.044Z  
+**Submitted:** 2026-08-20T16:44:47.753Z  
 
 ```c
 #include <stdio.h>
