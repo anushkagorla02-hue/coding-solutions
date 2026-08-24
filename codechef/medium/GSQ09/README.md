@@ -44,14 +44,14 @@ Code it out in the IDE.
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:08:16.095Z  
+**Submitted:** 2026-08-24T16:08:24.171Z  
 
 ```sql
 /*Write a query to set the Department as 'HR', for the employee with employee_id 2 to the existing table employee. */
 update employee
 set Department='HR'
 where employee_id=02;
-select *from employee
+select *from employee;
 ```
 
 ---
