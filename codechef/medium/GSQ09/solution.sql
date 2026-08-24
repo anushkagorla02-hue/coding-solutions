@@ -2,4 +2,4 @@
 update employee
 set Department='HR'
 where employee_id=02;
-select *from employee
+select *from employee;
