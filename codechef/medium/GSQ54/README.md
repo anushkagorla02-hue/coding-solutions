@@ -41,7 +41,7 @@ Write a query which does the following
 **Language:** SQL  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-25T17:54:31.987Z  
+**Submitted:** 2026-08-26T16:04:39.692Z  
 
 ```sql
 /* Write a query to add an additional column 'email' to the table 'customer'.
