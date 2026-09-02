@@ -4,18 +4,26 @@
 
 ## Problem
 
-### Rearrange Code
+### Add Inputs - MCQ
 
-You want to input two integers, and output their sum.
+What will the following code return as the output if the 1st line of input is 1 and the 2nd line of input is 2?
 
-Rearrange the code given, so that it does the above task.
+```
+a = input()
+b = input()
+c = a + b
+print(c)
+
+```
+
+ **Note:**  By default, the python `input()` function takes the user's input as a string.
 
 ## Solution
 
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T17:25:27.894Z  
+**Submitted:** 2026-09-02T17:25:56.368Z  
 
 ```cpp
 # cook your dish here
