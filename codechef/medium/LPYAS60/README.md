@@ -4,6 +4,8 @@
 
 ## Problem
 
+### Grades of Student
+
 Write a program to print the grade of a student based on the marks he/she has obtained.
 
  **Grading Rules** 
@@ -61,19 +63,19 @@ F
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-08T14:27:05.587Z  
+**Submitted:** 2026-09-04T12:29:17.411Z  
 
 ```py
 # cook your dish here
-n=int(input())
-if n>90:
-    grade="A"
-elif n>70:
-    grade="B"
-elif n>=40:
-    grade="C"
+marks=int(input())
+if marks>90:
+    grade='A'
+elif marks>70:
+    grade='B'
+elif marks>=40:
+    grade='C'
 else:
-    grade="F"
+    grade='F'
 print(grade)
 ```
 
