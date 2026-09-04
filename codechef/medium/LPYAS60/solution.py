@@ -1,11 +1,11 @@
 # cook your dish here
-n=int(input())
-if n>90:
-    grade="A"
-elif n>70:
-    grade="B"
-elif n>=40:
-    grade="C"
+marks=int(input())
+if marks>90:
+    grade='A'
+elif marks>70:
+    grade='B'
+elif marks>=40:
+    grade='C'
 else:
-    grade="F"
+    grade='F'
 print(grade)
