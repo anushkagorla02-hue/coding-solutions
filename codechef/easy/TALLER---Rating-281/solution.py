@@ -1,4 +1,4 @@
 # cook your dish here
-m,n=map(int,input().split())
-x,y=map(int,input().split())
-print((m*x)+(n*y))
+for_ in range(int(input())):
+    a,b=map(int,input().split())
+    print("A" if a>b else "B" )
