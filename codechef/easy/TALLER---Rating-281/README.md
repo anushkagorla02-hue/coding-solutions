@@ -49,11 +49,11 @@ A
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T14:56:59.621Z  
+**Submitted:** 2026-09-22T14:57:35.290Z  
 
 ```py
 # cook your dish here
-for_ in range(int(input())):
+for _ in range(int(input())):
     a,b=map(int,input().split())
     print("A" if a>b else "B" )
 ```
