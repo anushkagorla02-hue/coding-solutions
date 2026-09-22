@@ -4,68 +4,89 @@
 
 ## Problem
 
-### Reach on Time
+### Puzzle Hunt
 
-Chef has recently moved into an apartment. It takes $30$ minutes for Chef to reach office from the apartment.
+Chef and some of his friends are planning to participate in a puzzle hunt event.
 
-Chef left for the office $X$ minutes before Chef was supposed to reach. Determine whether or not Chef will be able to reach on time.
+The rules of the puzzle hunt state:
+"This hunt is intended for teams of $6$ to $8$ people."
+
+Chef's team has $N$ people in total. Are they eligible to participate?
 
 ### Input Format
-- The first line of input will contain a single integer $T$, denoting the number of test cases.
-- Each test case consists of a single integer $X$.
+
+The first and only line of input will contain a single integer $N$: the number of people present in Chef's team.
+
 ### Output Format
 
-For each test case, output `YES` if Chef will reach on time, `NO` otherwise.
+Print the answer: `Yes` if Chef's team is eligible to participate, and `No` otherwise.
 
-The output is case-insensitive. Thus, the strings `YES`, `yes`, `yeS`, and `Yes` are all considered the same.
+Each letter in the output may be printed in either uppercase or lowercase, i.e, the outputs `NO`, `No`, `nO`, `no` will all be treated as equivalent.
 
 ### Constraints
-- $1 \leq T \leq 60$
-- $1 \leq X \leq 60$
+- $1 \leq N \leq 10$
 ### Sample 1:
 Input
 Output
 
 ```
-6
-30
-60
-14
-29
-31
-42
-
+4
 ```
 
 ```
-YES
-YES
-NO
-NO
-YES
-YES
-
+No
 ```
 
 ### Explanation:
 
- **Test case 1:**  Chef leaves $30$ minutes before he is supposed to reach, so he will reach the office exactly on time since it takes $30$ minutes to commute.
+The puzzle hunt requires between $6$ and $8$ people in a team.
+$4$ isn't between $6$ and $8$, so Chef's team cannot participate.
 
- **Test case 2:**  Chef will reach $30$ minutes early.
+### Sample 2:
+Input
+Output
 
- **Test case 3:**  Chef will reach 16 minutes late.
+```
+7
+```
+
+```
+Yes
+```
+
+### Explanation:
+
+Chef's team has $7$ people, and $7$ lies between $6$ and $8$.
+So, Chef's team can participate in the event.
+
+### Sample 3:
+Input
+Output
+
+```
+8
+
+```
+
+```
+Yes
+```
+
+### Explanation:
+
+Chef's team has $8$ people, and $8$ lies between $6$ and $8$.
+So, Chef's team can participate in the event.
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-22T14:00:20.199Z  
+**Submitted:** 2026-09-22T14:01:48.146Z  
 
 ```py
 # cook your dish here
-for _ in range(int(input())):
-    print("YES" if int(input())>=30 else "NO")
+print("YES" if int(input()) in range(6,9) else "NO")
 ```
 
 ---
